@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"  manifest="/pxt-gh-pages/release.manifest" data-framework="typescript">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" data-rtl="/pxt-gh-pages/rtlsemantic.css" href="/pxt-gh-pages/semantic.css" type="text/css">
+    <title>MakeCode Asset Editor</title>
+    <style>
+        #asset-editor-field-div {
+            height: 100%;
+        }
+        .image-editor-wrapper {
+            border-radius: 0;
+        }
+        .image-editor-confirm {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // This line gets patched up by the cloud
+        var pxtConfig = {
+    "relprefix": "/pxt-gh-pages/",
+    "verprefix": "",
+    "workerjs": "/pxt-gh-pages/worker.js",
+    "monacoworkerjs": "/pxt-gh-pages/monacoworker.js",
+    "gifworkerjs": "/pxt-gh-pages/gifjs/gif.worker.js",
+    "serviceworkerjs": "/pxt-gh-pages/serviceworker.js",
+    "typeScriptWorkerJs": "/pxt-gh-pages/tsworker.js",
+    "pxtVersion": "9.3.7",
+    "pxtRelId": "localDirRelId",
+    "pxtCdnUrl": "/pxt-gh-pages/",
+    "commitCdnUrl": "/pxt-gh-pages/",
+    "blobCdnUrl": "/pxt-gh-pages/",
+    "cdnUrl": "/pxt-gh-pages/",
+    "targetVersion": "0.0.0",
+    "targetRelId": "",
+    "targetUrl": "",
+    "targetId": "microbit",
+    "simUrl": "/pxt-gh-pages/simulator.html",
+    "simserviceworkerUrl": "/pxt-gh-pages/simulatorserviceworker.js",
+    "simworkerconfigUrl": "/pxt-gh-pages/workerConfig.js",
+    "partsUrl": "/pxt-gh-pages/siminstructions.html",
+    "runUrl": "/pxt-gh-pages/run.html",
+    "docsUrl": "/pxt-gh-pages/docs.html",
+    "multiUrl": "/pxt-gh-pages/multi.html",
+    "asseteditorUrl": "/pxt-gh-pages/asseteditor.html",
+    "skillmapUrl": "/pxt-gh-pages/skillmap.html",
+    "authcodeUrl": "/pxt-gh-pages/authcode.html",
+    "multiplayerUrl": "/pxt-gh-pages/multiplayer.html",
+    "kioskUrl": "/pxt-gh-pages/kiosk.html",
+    "isStatic": true
+};
+    </script>
+    <script type="text/javascript" src="/pxt-gh-pages/target.js"></script>
+    <!-- <script type="text/javascript" src="https://pxt.azureedge.net/blob/ec765d3ba50a09c8c8819ec80390b6ffa72e945a/target.js"></script> -->
+    <script type="text/javascript" src="/pxt-gh-pages/pxtapp.js"></script>
+    <script>
+        pxt.setAppTarget(pxtTargetBundle);
+        // This can be overridden via the messages sent to the page
+        pxt.appTarget.runtime.palette = ["#000000","#ffffff","#ff2121","#ff93c4","#ff8135","#fff609","#249ca3","#78dc52","#003fad","#87f2ff","#8e2ec4","#a4839f","#5c406c","#e5cdc4","#91463d","#000000"];
+
+        // this get rewritten to blob URLs with SHAs while uploading to the cloud
+        // keep in sync with index.html
+        window.MonacoPaths = {
+            "vs/loader": "/pxt-gh-pages/vs/loader.js",
+            "vs/base/worker/workerMain": "/pxt-gh-pages/vs/base/worker/workerMain.js",
+            "vs/basic-languages/bat/bat": "/pxt-gh-pages/vs/basic-languages/bat/bat.js",
+            "vs/basic-languages/cpp/cpp": "/pxt-gh-pages/vs/basic-languages/cpp/cpp.js",
+            "vs/basic-languages/markdown/markdown": "/pxt-gh-pages/vs/basic-languages/markdown/markdown.js",
+            "vs/basic-languages/python/python": "/pxt-gh-pages/vs/basic-languages/python/python.js",
+            "vs/basic-languages/typescript/typescript": "/pxt-gh-pages/vs/basic-languages/typescript/typescript.js",
+            "vs/editor/editor.main.css": "/pxt-gh-pages/vs/editor/editor.main.css",
+            "vs/editor/editor.main": "/pxt-gh-pages/vs/editor/editor.main.js",
+            "vs/editor/editor.main.nls": "/pxt-gh-pages/vs/editor/editor.main.nls.js",
+            "vs/language/json/jsonMode": "/pxt-gh-pages/vs/language/json/jsonMode.js",
+            "vs/language/json/jsonWorker": "/pxt-gh-pages/vs/language/json/jsonWorker.js",
+            "vs/language/typescript/tsMode": "/pxt-gh-pages/vs/language/typescript/tsMode.js",
+            "vs/language/typescript/tsWorker": "/pxt-gh-pages/vs/language/typescript/tsWorker.js",
+            "lzma/lzma_worker-min.js": "/pxt-gh-pages/lzma/lzma_worker-min.js",
+            "smoothie/smoothie_compressed.js": "/pxt-gh-pages/smoothie/smoothie_compressed.js",
+            "pxtblockly.js": "/pxt-gh-pages/pxtblockly.js",
+            "blockly.css": "/pxt-gh-pages/blockly.css",
+            "rtlblockly.css": "/pxt-gh-pages/rtlblockly.css",
+            "gifjs/gif.js": "/pxt-gh-pages/gifjs/gif.js",
+            "qrcode/qrcode.min.js": "/pxt-gh-pages/qrcode/qrcode.min.js",
+            "zip.js/zip.min.js": "/pxt-gh-pages/zip.js/zip.min.js",
+            "pdf-lib/pdf-lib.min.js": "/pxt-gh-pages/pdf-lib/pdf-lib.min.js",
+            "music-editor/apple.png": "/pxt-gh-pages/music-editor/apple.png",
+            "music-editor/burger.png": "/pxt-gh-pages/music-editor/burger.png",
+            "music-editor/cake.png": "/pxt-gh-pages/music-editor/cake.png",
+            "music-editor/car.png": "/pxt-gh-pages/music-editor/car.png",
+            "music-editor/cat.png": "/pxt-gh-pages/music-editor/cat.png",
+            "music-editor/cherry.png": "/pxt-gh-pages/music-editor/cherry.png",
+            "music-editor/clam.png": "/pxt-gh-pages/music-editor/clam.png",
+            "music-editor/computer.png": "/pxt-gh-pages/music-editor/computer.png",
+            "music-editor/crab.png": "/pxt-gh-pages/music-editor/crab.png",
+            "music-editor/dog.png": "/pxt-gh-pages/music-editor/dog.png",
+            "music-editor/duck.png": "/pxt-gh-pages/music-editor/duck.png",
+            "music-editor/egg.png": "/pxt-gh-pages/music-editor/egg.png",
+            "music-editor/explosion.png": "/pxt-gh-pages/music-editor/explosion.png",
+            "music-editor/fish.png": "/pxt-gh-pages/music-editor/fish.png",
+            "music-editor/ice-cream.png": "/pxt-gh-pages/music-editor/ice-cream.png",
+            "music-editor/lemon.png": "/pxt-gh-pages/music-editor/lemon.png",
+            "music-editor/snake.png": "/pxt-gh-pages/music-editor/snake.png",
+            "music-editor/star.png": "/pxt-gh-pages/music-editor/star.png",
+            "music-editor/strawberry.png": "/pxt-gh-pages/music-editor/strawberry.png",
+            "music-editor/taco.png": "/pxt-gh-pages/music-editor/taco.png",
+            "music-editor/bass-clef.svg": "/pxt-gh-pages/music-editor/bass-clef.svg",
+            "music-editor/treble-clef.svg": "/pxt-gh-pages/music-editor/treble-clef.svg",
+        }
+    </script>
+    <script type="text/javascript" src="/pxt-gh-pages/pxtasseteditor.js"></script>
+    <div id="asset-editor-field-div">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+CACHE MANIFEST
+
+CACHE:
+/pxt-gh-pages/pxtsim.js
+/pxt-gh-pages/sim.js
+
+/pxt-gh-pages/sounds/giggle.wav
+/pxt-gh-pages/sounds/happy.wav
+/pxt-gh-pages/sounds/hello.wav
+/pxt-gh-pages/sounds/mysterious.wav
+/pxt-gh-pages/sounds/sad.wav
+/pxt-gh-pages/sounds/slide.wav
+/pxt-gh-pages/sounds/soaring.wav
+/pxt-gh-pages/sounds/spring.wav
+/pxt-gh-pages/sounds/twinkle.wav
+/pxt-gh-pages/sounds/yawn.wav
+
+NETWORK:
+*

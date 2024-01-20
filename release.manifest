@@ -1,0 +1,86 @@
+CACHE MANIFEST
+
+CACHE:
+/pxt-gh-pages/semantic.js
+/pxt-gh-pages/main.js
+/pxt-gh-pages/pxtapp.js
+/pxt-gh-pages/typescript.js
+/pxt-gh-pages/marked/marked.min.js
+/pxt-gh-pages/highlight.js/highlight.pack.js
+/pxt-gh-pages/jquery.js
+/pxt-gh-pages/pxtlib.js
+/pxt-gh-pages/pxtcompiler.js
+/pxt-gh-pages/pxtpy.js
+/pxt-gh-pages/pxtblockly.js
+/pxt-gh-pages/pxteditor.js
+/pxt-gh-pages/pxtsim.js
+/pxt-gh-pages/pxtembed.js
+/pxt-gh-pages/pxtworker.js
+/pxt-gh-pages/pxtweb.js
+/pxt-gh-pages/blockly.css
+/pxt-gh-pages/semantic.css
+/pxt-gh-pages/rtlsemantic.css
+
+
+/pxt-gh-pages/editor.js
+/pxt-gh-pages/fieldeditors.js
+
+# blockly
+/pxt-gh-pages/blockly/media/sprites.png
+/pxt-gh-pages/blockly/media/click.mp3
+/pxt-gh-pages/blockly/media/disconnect.wav
+/pxt-gh-pages/blockly/media/delete.mp3
+
+# monaco; keep in sync with webapp/public/index.html
+/pxt-gh-pages/vs/loader.js
+/pxt-gh-pages/vs/base/worker/workerMain.js
+/pxt-gh-pages/vs/basic-languages/bat/bat.js
+/pxt-gh-pages/vs/basic-languages/cpp/cpp.js
+/pxt-gh-pages/vs/basic-languages/python/python.js
+/pxt-gh-pages/vs/basic-languages/typescript/typescript.js
+/pxt-gh-pages/vs/basic-languages/markdown/markdown.js
+/pxt-gh-pages/vs/editor/editor.main.css
+/pxt-gh-pages/vs/editor/editor.main.js
+/pxt-gh-pages/vs/editor/editor.main.nls.js
+/pxt-gh-pages/vs/language/json/jsonMode.js
+/pxt-gh-pages/vs/language/json/jsonWorker.js
+/pxt-gh-pages/vs/language/typescript/tsMode.js
+/pxt-gh-pages/vs/language/typescript/tsWorker.js
+
+# charts
+/pxt-gh-pages/smoothie/smoothie_compressed.js
+/pxt-gh-pages/images/Bars_black.gif
+
+# gifjs
+/pxt-gh-pages/gifjs/gif.js
+
+# ai
+/pxt-gh-pages/ai.0.js
+
+/pxt-gh-pages/worker.js
+/pxt-gh-pages/monacoworker.js
+
+# ver Sat Jan 20 2024 18:24:09 GMT+0530 (India Standard Time)
+
+# target
+/pxt-gh-pages/docs/static/logo.portrait.white.svg
+/pxt-gh-pages/docs/static/logo.square.white.svg
+/pxt-gh-pages/docs/static/logo.square.white.svg
+/pxt-gh-pages/docs/static/logo.portrait.black.svg
+/pxt-gh-pages/docs/static/icons/apple-touch-icon.png
+/pxt-gh-pages/docs/static/plogo.png
+/pxt-gh-pages/docs/static/herogallery/hero-banner.png
+/pxt-gh-pages/docs/static/download/transfer.png
+/pxt-gh-pages/docs/static/download/connect-microbit.gif
+/pxt-gh-pages/docs/static/download/selecting-microbit.gif
+/pxt-gh-pages/docs/static/download/successfully-paired.png
+/pxt-gh-pages/docs/static/download/incompatible.png
+/pxt-gh-pages/docs/static/download/device-forgotten.gif
+/pxt-gh-pages/docs/static/download/browser-unpair-image.gif
+/pxt-gh-pages/docs/static/winapp.PNG
+/pxt-gh-pages/docs/static/profile/microbit-cloud.png
+
+/pxt-gh-pages/target.js
+
+NETWORK:
+*
